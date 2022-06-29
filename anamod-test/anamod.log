@@ -1,0 +1,554 @@
+2022-06-15 12:06:39,410: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fe4a87ab4f0>
+2022-06-15 12:06:39,412: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 12:06:39,412: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 12:06:41,931: INFO: anamod.core.master: Baseline mean loss: 0.0037264591082930565
+2022-06-15 12:06:41,931: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 12:08:59,948: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fe4b0156f70>
+2022-06-15 12:08:59,948: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 12:08:59,949: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 12:09:00,415: INFO: anamod.core.master: Baseline mean loss: 2.0594354091913152e-16
+2022-06-15 12:09:00,415: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 12:11:52,781: INFO: synmod.master: Begin generating sequence data with args: Namespace(feature_type_distribution=[0.25, 0.25, 0.5], fraction_relevant_features=0.5, include_interaction_only_features=None, logger=<Logger synmod.master (INFO)>, model_type='regressor', num_features=10, num_instances=100, num_interactions=0, output_dir='example_synthetic_temporal', rng=Generator(PCG64) at 0x7FE47C7E3E40, seed=100, sequence_length=20, standardize_features=None, synthesis_type='temporal', window_independent=False, write_outputs=None)
+2022-06-15 12:11:52,782: INFO: synmod.master: Generating feature class NumericFeature with window (3, 18) and aggregation_fn RandomWeightedAverage
+2022-06-15 12:11:52,969: INFO: synmod.master: Generating feature class NumericFeature with window (5, 10) and aggregation_fn Max
+2022-06-15 12:11:53,146: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn Average
+2022-06-15 12:11:53,331: INFO: synmod.master: Generating feature class NumericFeature with window (7, 19) and aggregation_fn Average
+2022-06-15 12:11:53,507: INFO: synmod.master: Generating feature class NumericFeature with window (3, 11) and aggregation_fn RandomWeightedAverage
+2022-06-15 12:11:53,691: INFO: synmod.master: Generating feature class NumericFeature with window (7, 17) and aggregation_fn MonotonicWeightedAverage
+2022-06-15 12:11:53,872: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn Max
+2022-06-15 12:11:54,061: INFO: synmod.master: Generating feature class NumericFeature with window (0, 11) and aggregation_fn Max
+2022-06-15 12:11:54,245: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn MonotonicWeightedAverage
+2022-06-15 12:11:54,413: INFO: synmod.master: Generating feature class NumericFeature with window (7, 17) and aggregation_fn Max
+2022-06-15 12:11:56,535: INFO: synmod.master: Ground truth polynomial:
+y = 0.820678762590906*beta*x_0 - 0.620017053224554*beta*x_2 - 0.430519899964703*beta*x_4 + 0.199824546264546*beta*x_7 + 0.991554208437103*beta*x_9 + 0.37630889518349*x_1 + 0.962957961254533*x_3 + 0.2585463394981*x_5 + 0.162072957560713*x_6 + 0.0704962107233014*x_8
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for irrelevant feature id 0: (3, 18)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for relevant feature id 1: (5, 10)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for irrelevant feature id 2: (1, 10)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for relevant feature id 3: (7, 19)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for irrelevant feature id 4: (3, 11)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for relevant feature id 5: (7, 17)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for relevant feature id 6: (1, 10)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for irrelevant feature id 7: (0, 11)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for relevant feature id 8: (1, 10)
+2022-06-15 12:11:56,565: INFO: synmod.master: Window for irrelevant feature id 9: (7, 17)
+2022-06-15 12:11:56,566: INFO: synmod.master: Begin estimating ground truth effects
+2022-06-15 12:11:56,578: INFO: synmod.master: End estimating ground truth effects
+2022-06-15 12:12:48,403: INFO: synmod.master: Begin generating sequence data with args: Namespace(feature_type_distribution=[0.25, 0.25, 0.5], fraction_relevant_features=0.5, include_interaction_only_features=None, logger=<Logger synmod.master (INFO)>, model_type='regressor', num_features=10, num_instances=100, num_interactions=0, output_dir='example_synthetic_temporal', rng=Generator(PCG64) at 0x7FE47C689F20, seed=100, sequence_length=20, standardize_features=None, synthesis_type='temporal', window_independent=False, write_outputs=None)
+2022-06-15 12:12:48,405: INFO: synmod.master: Generating feature class NumericFeature with window (3, 18) and aggregation_fn RandomWeightedAverage
+2022-06-15 12:12:48,590: INFO: synmod.master: Generating feature class NumericFeature with window (5, 10) and aggregation_fn Max
+2022-06-15 12:12:48,768: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn Average
+2022-06-15 12:12:48,952: INFO: synmod.master: Generating feature class NumericFeature with window (7, 19) and aggregation_fn Average
+2022-06-15 12:12:49,125: INFO: synmod.master: Generating feature class NumericFeature with window (3, 11) and aggregation_fn RandomWeightedAverage
+2022-06-15 12:12:49,312: INFO: synmod.master: Generating feature class NumericFeature with window (7, 17) and aggregation_fn MonotonicWeightedAverage
+2022-06-15 12:12:49,494: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn Max
+2022-06-15 12:12:49,683: INFO: synmod.master: Generating feature class NumericFeature with window (0, 11) and aggregation_fn Max
+2022-06-15 12:12:49,865: INFO: synmod.master: Generating feature class NumericFeature with window (1, 10) and aggregation_fn MonotonicWeightedAverage
+2022-06-15 12:12:50,035: INFO: synmod.master: Generating feature class NumericFeature with window (7, 17) and aggregation_fn Max
+2022-06-15 12:12:52,046: INFO: synmod.master: Ground truth polynomial:
+y = 0.820678762590906*beta*x_0 - 0.620017053224554*beta*x_2 - 0.430519899964703*beta*x_4 + 0.199824546264546*beta*x_7 + 0.991554208437103*beta*x_9 + 0.37630889518349*x_1 + 0.962957961254533*x_3 + 0.2585463394981*x_5 + 0.162072957560713*x_6 + 0.0704962107233014*x_8
+2022-06-15 12:12:52,060: INFO: synmod.master: Window for irrelevant feature id 0: (3, 18)
+2022-06-15 12:12:52,060: INFO: synmod.master: Window for relevant feature id 1: (5, 10)
+2022-06-15 12:12:52,060: INFO: synmod.master: Window for irrelevant feature id 2: (1, 10)
+2022-06-15 12:12:52,060: INFO: synmod.master: Window for relevant feature id 3: (7, 19)
+2022-06-15 12:12:52,060: INFO: synmod.master: Window for irrelevant feature id 4: (3, 11)
+2022-06-15 12:12:52,061: INFO: synmod.master: Window for relevant feature id 5: (7, 17)
+2022-06-15 12:12:52,061: INFO: synmod.master: Window for relevant feature id 6: (1, 10)
+2022-06-15 12:12:52,061: INFO: synmod.master: Window for irrelevant feature id 7: (0, 11)
+2022-06-15 12:12:52,061: INFO: synmod.master: Window for relevant feature id 8: (1, 10)
+2022-06-15 12:12:52,061: INFO: synmod.master: Window for irrelevant feature id 9: (7, 17)
+2022-06-15 12:12:52,061: INFO: synmod.master: Begin estimating ground truth effects
+2022-06-15 12:12:52,078: INFO: synmod.master: End estimating ground truth effects
+2022-06-15 12:17:56,073: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fe47c2bb4f0>
+2022-06-15 12:17:56,074: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 12:17:56,075: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 12:17:58,220: INFO: anamod.core.master: Baseline mean loss: 0.003719170344993472
+2022-06-15 12:17:58,220: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 12:31:48,914: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fd72610d1f0>
+2022-06-15 12:31:48,914: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 12:31:48,915: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 12:40:16,151: INFO: tensorflow: Assets written to: ram://dba4b3ac-3e7e-4f27-a358-7485030d8796/assets
+2022-06-15 12:40:21,332: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fd725f86f40>
+2022-06-15 12:40:21,332: INFO: anamod.core.master: Begin condor pipeline
+2022-06-15 12:40:50,858: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7fd6dbbcad90>
+2022-06-15 12:40:50,859: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 12:40:50,860: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 13:53:57,946: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f923ea9cf40>
+2022-06-15 13:53:57,949: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 13:53:57,953: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:14:02,723: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b2a10ef40>
+2022-06-15 14:14:02,723: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:14:02,724: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:15:13,976: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b29f8a370>
+2022-06-15 14:15:13,979: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:15:13,984: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:15:46,937: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b29f33940>
+2022-06-15 14:15:46,940: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:15:46,944: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:15:48,984: INFO: anamod.core.master: Baseline mean loss: 0.0037124662194401026
+2022-06-15 14:15:48,985: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:17:23,251: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b29033ee0>
+2022-06-15 14:17:23,254: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:17:23,258: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:17:24,164: INFO: anamod.core.master: Baseline mean loss: 0.003586874343454838
+2022-06-15 14:17:24,164: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:19:34,616: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b28fc5e20>
+2022-06-15 14:19:34,618: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:19:34,622: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:19:35,034: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 14:19:35,034: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:34:31,310: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a76256730>
+2022-06-15 14:34:31,312: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:34:31,316: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:34:31,826: INFO: anamod.core.master: Baseline mean loss: 0.0037709693424403667
+2022-06-15 14:34:31,826: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:35:04,544: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a762ff2e0>
+2022-06-15 14:35:04,547: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:35:04,551: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:35:04,647: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 14:35:04,647: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:35:04,712: INFO: anamod.core.master: End perturbing features
+2022-06-15 14:35:04,712: INFO: anamod.core.master: Identified important features: ; proceeding with temporal analysis
+2022-06-15 14:35:04,712: INFO: anamod.core.master: Begin writing outputs
+2022-06-15 14:35:04,728: INFO: anamod.core.master: End writing outputs
+2022-06-15 14:35:04,728: INFO: anamod.core.master: End anamod worker pipeline
+2022-06-15 14:35:04,729: INFO: anamod.core.master: Compiling results
+2022-06-15 14:35:04,765: INFO: anamod.core.master: Begin intermediate file cleanup
+2022-06-15 14:35:04,767: INFO: anamod.core.master: End intermediate file cleanup
+2022-06-15 14:35:04,786: INFO: anamod.core.master: End anamod master pipeline
+2022-06-15 14:35:29,707: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a76052910>
+2022-06-15 14:35:29,710: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:35:29,714: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:35:29,823: INFO: anamod.core.master: Baseline mean loss: 0.0006119059398770332
+2022-06-15 14:35:29,823: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:35:29,890: INFO: anamod.core.master: End perturbing features
+2022-06-15 14:35:29,891: INFO: anamod.core.master: Identified important features: ; proceeding with temporal analysis
+2022-06-15 14:35:29,891: INFO: anamod.core.master: Begin writing outputs
+2022-06-15 14:35:29,907: INFO: anamod.core.master: End writing outputs
+2022-06-15 14:35:29,907: INFO: anamod.core.master: End anamod worker pipeline
+2022-06-15 14:35:29,907: INFO: anamod.core.master: Compiling results
+2022-06-15 14:35:29,942: INFO: anamod.core.master: Begin intermediate file cleanup
+2022-06-15 14:35:29,942: INFO: anamod.core.master: End intermediate file cleanup
+2022-06-15 14:35:29,964: INFO: anamod.core.master: End anamod master pipeline
+2022-06-15 14:39:11,765: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a75faac10>
+2022-06-15 14:39:11,768: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:39:11,785: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:39:13,177: INFO: anamod.core.master: Baseline mean loss: 0.00361150992102921
+2022-06-15 14:39:13,177: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:43:27,734: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a748a2bb0>
+2022-06-15 14:43:27,751: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:43:27,756: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:43:28,216: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 14:43:28,216: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:49:38,599: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b28f98730>
+2022-06-15 14:49:38,602: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:49:38,607: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:49:39,005: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 14:49:39,005: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 14:53:32,190: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2b29023ee0>
+2022-06-15 14:53:32,193: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 14:53:32,197: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 14:53:32,638: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 14:53:32,638: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 15:01:33,653: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a766c4ac0>
+2022-06-15 15:01:33,656: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 15:01:33,711: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 15:02:03,251: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a76274550>
+2022-06-15 15:02:03,254: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 15:02:03,258: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 15:02:41,926: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a75fedf10>
+2022-06-15 15:02:41,929: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 15:02:41,932: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 15:04:08,261: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a76065c70>
+2022-06-15 15:04:08,264: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 15:04:08,267: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 15:04:08,391: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 15:04:08,391: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 15:05:30,954: INFO: anamod.core.master: Begin anamod master pipeline with args: <anamod.core.model_analyzer.TemporalModelAnalyzer object at 0x7f2a72d2e430>
+2022-06-15 15:05:30,957: INFO: anamod.core.master: Begin running serial pipeline
+2022-06-15 15:05:30,961: INFO: anamod.core.master: Begin anamod worker pipeline on host triads-DL
+2022-06-15 15:05:31,056: INFO: anamod.core.master: Baseline mean loss: 0.0
+2022-06-15 15:05:31,057: INFO: anamod.core.master: Begin perturbing features
+2022-06-15 15:31:15,013: INFO: anamod.core.master: End perturbing features
+2022-06-15 15:31:15,014: INFO: anamod.core.master: Identified important features: 0,1,2,3,4,5,6,7,8,9,12,13,15,16,19,20,22,23,24,25,26,27,28,29,30,31,32,34,35,36,37,38,39,40,41,42,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,73,74,75,76,77,78,79,80,84,87,88,89,90,92,94,95,96,98,100,101,102,103,104,106,108,109,110,112,113,114,115,116,117,118,120,122,123,124,126,127,128,130,132,133,134,135,136,137,138,139,140,141,144,145,146,147,148,149,150,151,152,155,159,160,163,164,165,397,398; proceeding with temporal analysis
+2022-06-15 15:31:18,782: INFO: anamod.core.master: Feature 0: ordering important: True
+2022-06-15 15:31:18,783: INFO: anamod.core.master: Begin searching for temporal window for feature 0
+2022-06-15 15:31:58,916: INFO: anamod.core.master: Found window for feature 0: (1, 10); significant: True; ordering important: True
+2022-06-15 15:32:02,806: INFO: anamod.core.master: Feature 1: ordering important: True
+2022-06-15 15:32:02,807: INFO: anamod.core.master: Begin searching for temporal window for feature 1
+2022-06-15 15:32:41,781: INFO: anamod.core.master: Found window for feature 1: (1, 10); significant: True; ordering important: True
+2022-06-15 15:32:45,508: INFO: anamod.core.master: Feature 2: ordering important: True
+2022-06-15 15:32:45,508: INFO: anamod.core.master: Begin searching for temporal window for feature 2
+2022-06-15 15:33:19,155: INFO: anamod.core.master: Found window for feature 2: (1, 3); significant: False; ordering important: False
+2022-06-15 15:33:22,867: INFO: anamod.core.master: Feature 3: ordering important: True
+2022-06-15 15:33:22,867: INFO: anamod.core.master: Begin searching for temporal window for feature 3
+2022-06-15 15:34:02,070: INFO: anamod.core.master: Found window for feature 3: (1, 10); significant: True; ordering important: True
+2022-06-15 15:34:05,976: INFO: anamod.core.master: Feature 4: ordering important: True
+2022-06-15 15:34:05,977: INFO: anamod.core.master: Begin searching for temporal window for feature 4
+2022-06-15 15:34:40,068: INFO: anamod.core.master: Found window for feature 4: (1, 2); significant: True; ordering important: False
+2022-06-15 15:34:43,814: INFO: anamod.core.master: Feature 5: ordering important: True
+2022-06-15 15:34:43,814: INFO: anamod.core.master: Begin searching for temporal window for feature 5
+2022-06-15 15:35:21,716: INFO: anamod.core.master: Found window for feature 5: (1, 10); significant: True; ordering important: False
+2022-06-15 15:35:25,448: INFO: anamod.core.master: Feature 6: ordering important: True
+2022-06-15 15:35:25,448: INFO: anamod.core.master: Begin searching for temporal window for feature 6
+2022-06-15 15:36:02,226: INFO: anamod.core.master: Found window for feature 6: (1, 4); significant: True; ordering important: False
+2022-06-15 15:36:06,122: INFO: anamod.core.master: Feature 7: ordering important: True
+2022-06-15 15:36:06,122: INFO: anamod.core.master: Begin searching for temporal window for feature 7
+2022-06-15 15:36:54,394: INFO: anamod.core.master: Found window for feature 7: (0, 8); significant: True; ordering important: True
+2022-06-15 15:36:58,217: INFO: anamod.core.master: Feature 8: ordering important: True
+2022-06-15 15:36:58,217: INFO: anamod.core.master: Begin searching for temporal window for feature 8
+2022-06-15 15:37:33,157: INFO: anamod.core.master: Found window for feature 8: (1, 3); significant: True; ordering important: False
+2022-06-15 15:37:37,107: INFO: anamod.core.master: Feature 9: ordering important: True
+2022-06-15 15:37:37,107: INFO: anamod.core.master: Begin searching for temporal window for feature 9
+2022-06-15 15:38:17,344: INFO: anamod.core.master: Found window for feature 9: (0, 10); significant: True; ordering important: True
+2022-06-15 15:38:21,874: INFO: anamod.core.master: Feature 12: ordering important: True
+2022-06-15 15:38:21,875: INFO: anamod.core.master: Begin searching for temporal window for feature 12
+2022-06-15 15:38:56,467: INFO: anamod.core.master: Found window for feature 12: (1, 3); significant: True; ordering important: False
+2022-06-15 15:39:00,086: INFO: anamod.core.master: Feature 13: ordering important: True
+2022-06-15 15:39:00,087: INFO: anamod.core.master: Begin searching for temporal window for feature 13
+2022-06-15 15:39:33,067: INFO: anamod.core.master: Found window for feature 13: (1, 3); significant: False; ordering important: False
+2022-06-15 15:39:36,723: INFO: anamod.core.master: Feature 15: ordering important: True
+2022-06-15 15:39:36,723: INFO: anamod.core.master: Begin searching for temporal window for feature 15
+2022-06-15 15:40:13,155: INFO: anamod.core.master: Found window for feature 15: (1, 10); significant: True; ordering important: True
+2022-06-15 15:40:16,827: INFO: anamod.core.master: Feature 16: ordering important: True
+2022-06-15 15:40:17,796: INFO: anamod.core.master: Begin searching for temporal window for feature 16
+2022-06-15 15:40:56,515: INFO: anamod.core.master: Found window for feature 16: (1, 10); significant: True; ordering important: True
+2022-06-15 15:41:00,546: INFO: anamod.core.master: Feature 19: ordering important: True
+2022-06-15 15:41:00,546: INFO: anamod.core.master: Begin searching for temporal window for feature 19
+2022-06-15 15:41:37,665: INFO: anamod.core.master: Found window for feature 19: (2, 4); significant: True; ordering important: False
+2022-06-15 15:41:41,240: INFO: anamod.core.master: Feature 20: ordering important: True
+2022-06-15 15:41:41,241: INFO: anamod.core.master: Begin searching for temporal window for feature 20
+2022-06-15 15:42:17,796: INFO: anamod.core.master: Found window for feature 20: (1, 10); significant: True; ordering important: True
+2022-06-15 15:42:21,409: INFO: anamod.core.master: Feature 22: ordering important: True
+2022-06-15 15:42:21,410: INFO: anamod.core.master: Begin searching for temporal window for feature 22
+2022-06-15 15:42:59,792: INFO: anamod.core.master: Found window for feature 22: (1, 10); significant: True; ordering important: True
+2022-06-15 15:43:04,231: INFO: anamod.core.master: Feature 23: ordering important: True
+2022-06-15 15:43:04,231: INFO: anamod.core.master: Begin searching for temporal window for feature 23
+2022-06-15 15:43:43,651: INFO: anamod.core.master: Found window for feature 23: (1, 10); significant: True; ordering important: True
+2022-06-15 15:43:47,545: INFO: anamod.core.master: Feature 24: ordering important: True
+2022-06-15 15:43:48,567: INFO: anamod.core.master: Begin searching for temporal window for feature 24
+2022-06-15 15:44:28,061: INFO: anamod.core.master: Found window for feature 24: (1, 7); significant: True; ordering important: True
+2022-06-15 15:44:31,888: INFO: anamod.core.master: Feature 25: ordering important: True
+2022-06-15 15:44:31,888: INFO: anamod.core.master: Begin searching for temporal window for feature 25
+2022-06-15 15:45:10,498: INFO: anamod.core.master: Found window for feature 25: (1, 10); significant: True; ordering important: True
+2022-06-15 15:45:15,382: INFO: anamod.core.master: Feature 26: ordering important: True
+2022-06-15 15:45:15,382: INFO: anamod.core.master: Begin searching for temporal window for feature 26
+2022-06-15 15:45:59,445: INFO: anamod.core.master: Found window for feature 26: (1, 9); significant: True; ordering important: True
+2022-06-15 15:46:03,307: INFO: anamod.core.master: Feature 27: ordering important: True
+2022-06-15 15:46:03,307: INFO: anamod.core.master: Begin searching for temporal window for feature 27
+2022-06-15 15:46:41,763: INFO: anamod.core.master: Found window for feature 27: (1, 10); significant: True; ordering important: True
+2022-06-15 15:46:45,560: INFO: anamod.core.master: Feature 28: ordering important: True
+2022-06-15 15:46:45,561: INFO: anamod.core.master: Begin searching for temporal window for feature 28
+2022-06-15 15:47:23,353: INFO: anamod.core.master: Found window for feature 28: (1, 10); significant: True; ordering important: True
+2022-06-15 15:47:27,128: INFO: anamod.core.master: Feature 29: ordering important: True
+2022-06-15 15:47:27,129: INFO: anamod.core.master: Begin searching for temporal window for feature 29
+2022-06-15 15:48:07,322: INFO: anamod.core.master: Found window for feature 29: (1, 10); significant: True; ordering important: True
+2022-06-15 15:48:11,225: INFO: anamod.core.master: Feature 30: ordering important: True
+2022-06-15 15:48:11,225: INFO: anamod.core.master: Begin searching for temporal window for feature 30
+2022-06-15 15:48:47,278: INFO: anamod.core.master: Found window for feature 30: (1, 4); significant: True; ordering important: True
+2022-06-15 15:48:51,073: INFO: anamod.core.master: Feature 31: ordering important: True
+2022-06-15 15:48:51,073: INFO: anamod.core.master: Begin searching for temporal window for feature 31
+2022-06-15 15:49:29,171: INFO: anamod.core.master: Found window for feature 31: (1, 10); significant: True; ordering important: True
+2022-06-15 15:49:32,958: INFO: anamod.core.master: Feature 32: ordering important: True
+2022-06-15 15:49:32,958: INFO: anamod.core.master: Begin searching for temporal window for feature 32
+2022-06-15 15:50:12,573: INFO: anamod.core.master: Found window for feature 32: (1, 10); significant: True; ordering important: True
+2022-06-15 15:50:16,486: INFO: anamod.core.master: Feature 34: ordering important: True
+2022-06-15 15:50:16,486: INFO: anamod.core.master: Begin searching for temporal window for feature 34
+2022-06-15 15:50:51,063: INFO: anamod.core.master: Found window for feature 34: (1, 4); significant: False; ordering important: False
+2022-06-15 15:50:54,854: INFO: anamod.core.master: Feature 35: ordering important: True
+2022-06-15 15:50:54,854: INFO: anamod.core.master: Begin searching for temporal window for feature 35
+2022-06-15 15:51:32,803: INFO: anamod.core.master: Found window for feature 35: (1, 10); significant: True; ordering important: True
+2022-06-15 15:51:36,523: INFO: anamod.core.master: Feature 36: ordering important: True
+2022-06-15 15:51:36,523: INFO: anamod.core.master: Begin searching for temporal window for feature 36
+2022-06-15 15:52:14,929: INFO: anamod.core.master: Found window for feature 36: (1, 10); significant: True; ordering important: True
+2022-06-15 15:52:19,105: INFO: anamod.core.master: Feature 37: ordering important: True
+2022-06-15 15:52:19,105: INFO: anamod.core.master: Begin searching for temporal window for feature 37
+2022-06-15 15:52:57,658: INFO: anamod.core.master: Found window for feature 37: (1, 10); significant: True; ordering important: True
+2022-06-15 15:53:01,430: INFO: anamod.core.master: Feature 38: ordering important: True
+2022-06-15 15:53:01,430: INFO: anamod.core.master: Begin searching for temporal window for feature 38
+2022-06-15 15:53:38,809: INFO: anamod.core.master: Found window for feature 38: (1, 10); significant: True; ordering important: True
+2022-06-15 15:53:42,557: INFO: anamod.core.master: Feature 39: ordering important: True
+2022-06-15 15:53:42,558: INFO: anamod.core.master: Begin searching for temporal window for feature 39
+2022-06-15 15:54:23,547: INFO: anamod.core.master: Found window for feature 39: (0, 10); significant: True; ordering important: True
+2022-06-15 15:54:28,055: INFO: anamod.core.master: Feature 40: ordering important: True
+2022-06-15 15:54:28,056: INFO: anamod.core.master: Begin searching for temporal window for feature 40
+2022-06-15 15:55:06,705: INFO: anamod.core.master: Found window for feature 40: (1, 10); significant: True; ordering important: True
+2022-06-15 15:55:10,468: INFO: anamod.core.master: Feature 41: ordering important: True
+2022-06-15 15:55:10,468: INFO: anamod.core.master: Begin searching for temporal window for feature 41
+2022-06-15 15:55:52,162: INFO: anamod.core.master: Found window for feature 41: (0, 10); significant: True; ordering important: True
+2022-06-15 15:55:56,115: INFO: anamod.core.master: Feature 42: ordering important: True
+2022-06-15 15:55:56,116: INFO: anamod.core.master: Begin searching for temporal window for feature 42
+2022-06-15 15:56:34,357: INFO: anamod.core.master: Found window for feature 42: (1, 10); significant: True; ordering important: True
+2022-06-15 15:56:38,255: INFO: anamod.core.master: Feature 49: ordering important: True
+2022-06-15 15:56:38,255: INFO: anamod.core.master: Begin searching for temporal window for feature 49
+2022-06-15 15:57:18,785: INFO: anamod.core.master: Found window for feature 49: (1, 10); significant: True; ordering important: True
+2022-06-15 15:57:22,720: INFO: anamod.core.master: Feature 50: ordering important: True
+2022-06-15 15:57:22,720: INFO: anamod.core.master: Begin searching for temporal window for feature 50
+2022-06-15 15:58:01,416: INFO: anamod.core.master: Found window for feature 50: (1, 10); significant: True; ordering important: True
+2022-06-15 15:58:05,226: INFO: anamod.core.master: Feature 51: ordering important: True
+2022-06-15 15:58:05,226: INFO: anamod.core.master: Begin searching for temporal window for feature 51
+2022-06-15 15:58:43,302: INFO: anamod.core.master: Found window for feature 51: (1, 10); significant: True; ordering important: True
+2022-06-15 15:58:47,183: INFO: anamod.core.master: Feature 52: ordering important: True
+2022-06-15 15:58:47,183: INFO: anamod.core.master: Begin searching for temporal window for feature 52
+2022-06-15 15:59:28,246: INFO: anamod.core.master: Found window for feature 52: (1, 10); significant: True; ordering important: True
+2022-06-15 15:59:32,421: INFO: anamod.core.master: Feature 53: ordering important: True
+2022-06-15 15:59:32,422: INFO: anamod.core.master: Begin searching for temporal window for feature 53
+2022-06-15 16:00:11,197: INFO: anamod.core.master: Found window for feature 53: (1, 10); significant: True; ordering important: True
+2022-06-15 16:00:14,987: INFO: anamod.core.master: Feature 54: ordering important: True
+2022-06-15 16:00:14,987: INFO: anamod.core.master: Begin searching for temporal window for feature 54
+2022-06-15 16:00:53,627: INFO: anamod.core.master: Found window for feature 54: (1, 10); significant: True; ordering important: True
+2022-06-15 16:00:57,628: INFO: anamod.core.master: Feature 55: ordering important: True
+2022-06-15 16:00:57,629: INFO: anamod.core.master: Begin searching for temporal window for feature 55
+2022-06-15 16:01:37,855: INFO: anamod.core.master: Found window for feature 55: (1, 10); significant: True; ordering important: True
+2022-06-15 16:01:42,083: INFO: anamod.core.master: Feature 56: ordering important: True
+2022-06-15 16:01:42,083: INFO: anamod.core.master: Begin searching for temporal window for feature 56
+2022-06-15 16:02:24,871: INFO: anamod.core.master: Found window for feature 56: (1, 10); significant: True; ordering important: True
+2022-06-15 16:02:28,893: INFO: anamod.core.master: Feature 57: ordering important: True
+2022-06-15 16:02:28,893: INFO: anamod.core.master: Begin searching for temporal window for feature 57
+2022-06-15 16:03:08,011: INFO: anamod.core.master: Found window for feature 57: (1, 10); significant: True; ordering important: True
+2022-06-15 16:03:11,943: INFO: anamod.core.master: Feature 58: ordering important: True
+2022-06-15 16:03:11,943: INFO: anamod.core.master: Begin searching for temporal window for feature 58
+2022-06-15 16:03:50,767: INFO: anamod.core.master: Found window for feature 58: (1, 10); significant: True; ordering important: True
+2022-06-15 16:03:55,584: INFO: anamod.core.master: Feature 59: ordering important: True
+2022-06-15 16:03:55,584: INFO: anamod.core.master: Begin searching for temporal window for feature 59
+2022-06-15 16:04:38,155: INFO: anamod.core.master: Found window for feature 59: (1, 10); significant: True; ordering important: True
+2022-06-15 16:04:42,398: INFO: anamod.core.master: Feature 60: ordering important: True
+2022-06-15 16:04:42,399: INFO: anamod.core.master: Begin searching for temporal window for feature 60
+2022-06-15 16:05:23,900: INFO: anamod.core.master: Found window for feature 60: (1, 10); significant: True; ordering important: True
+2022-06-15 16:05:27,679: INFO: anamod.core.master: Feature 61: ordering important: True
+2022-06-15 16:05:27,679: INFO: anamod.core.master: Begin searching for temporal window for feature 61
+2022-06-15 16:06:05,347: INFO: anamod.core.master: Found window for feature 61: (1, 10); significant: True; ordering important: True
+2022-06-15 16:06:09,007: INFO: anamod.core.master: Feature 62: ordering important: True
+2022-06-15 16:06:09,007: INFO: anamod.core.master: Begin searching for temporal window for feature 62
+2022-06-15 16:06:48,700: INFO: anamod.core.master: Found window for feature 62: (1, 10); significant: True; ordering important: True
+2022-06-15 16:06:52,553: INFO: anamod.core.master: Feature 63: ordering important: True
+2022-06-15 16:06:52,553: INFO: anamod.core.master: Begin searching for temporal window for feature 63
+2022-06-15 16:07:29,952: INFO: anamod.core.master: Found window for feature 63: (1, 10); significant: True; ordering important: True
+2022-06-15 16:07:33,706: INFO: anamod.core.master: Feature 64: ordering important: True
+2022-06-15 16:07:33,707: INFO: anamod.core.master: Begin searching for temporal window for feature 64
+2022-06-15 16:08:12,057: INFO: anamod.core.master: Found window for feature 64: (1, 10); significant: True; ordering important: True
+2022-06-15 16:08:15,852: INFO: anamod.core.master: Feature 65: ordering important: True
+2022-06-15 16:08:15,852: INFO: anamod.core.master: Begin searching for temporal window for feature 65
+2022-06-15 16:08:55,123: INFO: anamod.core.master: Found window for feature 65: (1, 10); significant: True; ordering important: True
+2022-06-15 16:08:58,939: INFO: anamod.core.master: Feature 66: ordering important: True
+2022-06-15 16:08:58,939: INFO: anamod.core.master: Begin searching for temporal window for feature 66
+2022-06-15 16:09:32,666: INFO: anamod.core.master: Found window for feature 66: (1, 10); significant: False; ordering important: False
+2022-06-15 16:09:36,421: INFO: anamod.core.master: Feature 73: ordering important: True
+2022-06-15 16:09:36,421: INFO: anamod.core.master: Begin searching for temporal window for feature 73
+2022-06-15 16:10:12,365: INFO: anamod.core.master: Found window for feature 73: (1, 4); significant: True; ordering important: True
+2022-06-15 16:10:16,026: INFO: anamod.core.master: Feature 74: ordering important: True
+2022-06-15 16:10:16,027: INFO: anamod.core.master: Begin searching for temporal window for feature 74
+2022-06-15 16:10:53,368: INFO: anamod.core.master: Found window for feature 74: (0, 2); significant: True; ordering important: False
+2022-06-15 16:10:57,255: INFO: anamod.core.master: Feature 75: ordering important: True
+2022-06-15 16:10:57,255: INFO: anamod.core.master: Begin searching for temporal window for feature 75
+2022-06-15 16:11:31,931: INFO: anamod.core.master: Found window for feature 75: (1, 1); significant: False; ordering important: False
+2022-06-15 16:11:35,714: INFO: anamod.core.master: Feature 76: ordering important: True
+2022-06-15 16:11:35,714: INFO: anamod.core.master: Begin searching for temporal window for feature 76
+2022-06-15 16:12:19,933: INFO: anamod.core.master: Found window for feature 76: (0, 4); significant: True; ordering important: False
+2022-06-15 16:12:23,472: INFO: anamod.core.master: Feature 77: ordering important: True
+2022-06-15 16:12:23,473: INFO: anamod.core.master: Begin searching for temporal window for feature 77
+2022-06-15 16:12:55,610: INFO: anamod.core.master: Found window for feature 77: (1, 1); significant: True; ordering important: False
+2022-06-15 16:12:59,237: INFO: anamod.core.master: Feature 78: ordering important: True
+2022-06-15 16:12:59,237: INFO: anamod.core.master: Begin searching for temporal window for feature 78
+2022-06-15 16:13:38,138: INFO: anamod.core.master: Found window for feature 78: (0, 0); significant: True; ordering important: False
+2022-06-15 16:13:41,850: INFO: anamod.core.master: Feature 79: ordering important: True
+2022-06-15 16:13:41,850: INFO: anamod.core.master: Begin searching for temporal window for feature 79
+2022-06-15 16:14:23,291: INFO: anamod.core.master: Found window for feature 79: (0, 10); significant: True; ordering important: True
+2022-06-15 16:14:27,012: INFO: anamod.core.master: Feature 80: ordering important: False
+2022-06-15 16:14:27,012: INFO: anamod.core.master: Begin searching for temporal window for feature 80
+2022-06-15 16:15:03,558: INFO: anamod.core.master: Found window for feature 80: (0, 0); significant: True; ordering important: False
+2022-06-15 16:15:07,261: INFO: anamod.core.master: Feature 84: ordering important: True
+2022-06-15 16:15:07,261: INFO: anamod.core.master: Begin searching for temporal window for feature 84
+2022-06-15 16:15:46,571: INFO: anamod.core.master: Found window for feature 84: (1, 10); significant: True; ordering important: True
+2022-06-15 16:15:50,354: INFO: anamod.core.master: Feature 87: ordering important: True
+2022-06-15 16:15:50,354: INFO: anamod.core.master: Begin searching for temporal window for feature 87
+2022-06-15 16:16:26,871: INFO: anamod.core.master: Found window for feature 87: (1, 10); significant: True; ordering important: True
+2022-06-15 16:16:30,500: INFO: anamod.core.master: Feature 88: ordering important: True
+2022-06-15 16:16:30,501: INFO: anamod.core.master: Begin searching for temporal window for feature 88
+2022-06-15 16:17:13,928: INFO: anamod.core.master: Found window for feature 88: (0, 4); significant: True; ordering important: True
+2022-06-15 16:17:17,534: INFO: anamod.core.master: Feature 89: ordering important: True
+2022-06-15 16:17:17,534: INFO: anamod.core.master: Begin searching for temporal window for feature 89
+2022-06-15 16:17:55,759: INFO: anamod.core.master: Found window for feature 89: (1, 10); significant: True; ordering important: True
+2022-06-15 16:17:59,569: INFO: anamod.core.master: Feature 90: ordering important: True
+2022-06-15 16:17:59,569: INFO: anamod.core.master: Begin searching for temporal window for feature 90
+2022-06-15 16:18:32,502: INFO: anamod.core.master: Found window for feature 90: (1, 1); significant: False; ordering important: False
+2022-06-15 16:18:36,132: INFO: anamod.core.master: Feature 92: ordering important: True
+2022-06-15 16:18:36,132: INFO: anamod.core.master: Begin searching for temporal window for feature 92
+2022-06-15 16:19:12,397: INFO: anamod.core.master: Found window for feature 92: (1, 10); significant: True; ordering important: True
+2022-06-15 16:19:16,049: INFO: anamod.core.master: Feature 94: ordering important: True
+2022-06-15 16:19:16,050: INFO: anamod.core.master: Begin searching for temporal window for feature 94
+2022-06-15 16:19:57,469: INFO: anamod.core.master: Found window for feature 94: (0, 10); significant: True; ordering important: True
+2022-06-15 16:20:01,426: INFO: anamod.core.master: Feature 95: ordering important: True
+2022-06-15 16:20:01,426: INFO: anamod.core.master: Begin searching for temporal window for feature 95
+2022-06-15 16:20:43,288: INFO: anamod.core.master: Found window for feature 95: (1, 8); significant: True; ordering important: True
+2022-06-15 16:20:47,021: INFO: anamod.core.master: Feature 96: ordering important: True
+2022-06-15 16:20:47,021: INFO: anamod.core.master: Begin searching for temporal window for feature 96
+2022-06-15 16:21:26,613: INFO: anamod.core.master: Found window for feature 96: (1, 10); significant: True; ordering important: True
+2022-06-15 16:21:30,709: INFO: anamod.core.master: Feature 98: ordering important: True
+2022-06-15 16:21:30,709: INFO: anamod.core.master: Begin searching for temporal window for feature 98
+2022-06-15 16:22:11,045: INFO: anamod.core.master: Found window for feature 98: (1, 10); significant: True; ordering important: True
+2022-06-15 16:22:15,290: INFO: anamod.core.master: Feature 100: ordering important: True
+2022-06-15 16:22:15,291: INFO: anamod.core.master: Begin searching for temporal window for feature 100
+2022-06-15 16:22:56,586: INFO: anamod.core.master: Found window for feature 100: (1, 10); significant: True; ordering important: True
+2022-06-15 16:23:00,340: INFO: anamod.core.master: Feature 101: ordering important: True
+2022-06-15 16:23:00,341: INFO: anamod.core.master: Begin searching for temporal window for feature 101
+2022-06-15 16:23:39,712: INFO: anamod.core.master: Found window for feature 101: (1, 10); significant: True; ordering important: True
+2022-06-15 16:23:43,485: INFO: anamod.core.master: Feature 102: ordering important: True
+2022-06-15 16:23:43,486: INFO: anamod.core.master: Begin searching for temporal window for feature 102
+2022-06-15 16:24:19,427: INFO: anamod.core.master: Found window for feature 102: (1, 4); significant: True; ordering important: False
+2022-06-15 16:24:23,171: INFO: anamod.core.master: Feature 103: ordering important: True
+2022-06-15 16:24:23,607: INFO: anamod.core.master: Begin searching for temporal window for feature 103
+2022-06-15 16:25:03,796: INFO: anamod.core.master: Found window for feature 103: (1, 10); significant: True; ordering important: False
+2022-06-15 16:25:07,698: INFO: anamod.core.master: Feature 104: ordering important: True
+2022-06-15 16:25:12,619: INFO: anamod.core.master: Begin searching for temporal window for feature 104
+2022-06-15 16:25:58,888: INFO: anamod.core.master: Found window for feature 104: (0, 4); significant: True; ordering important: True
+2022-06-15 16:26:02,645: INFO: anamod.core.master: Feature 106: ordering important: True
+2022-06-15 16:26:02,645: INFO: anamod.core.master: Begin searching for temporal window for feature 106
+2022-06-15 16:26:35,852: INFO: anamod.core.master: Found window for feature 106: (1, 2); significant: True; ordering important: False
+2022-06-15 16:26:39,489: INFO: anamod.core.master: Feature 108: ordering important: True
+2022-06-15 16:26:39,489: INFO: anamod.core.master: Begin searching for temporal window for feature 108
+2022-06-15 16:27:18,792: INFO: anamod.core.master: Found window for feature 108: (1, 10); significant: True; ordering important: True
+2022-06-15 16:27:22,712: INFO: anamod.core.master: Feature 109: ordering important: True
+2022-06-15 16:27:22,712: INFO: anamod.core.master: Begin searching for temporal window for feature 109
+2022-06-15 16:27:59,248: INFO: anamod.core.master: Found window for feature 109: (1, 4); significant: True; ordering important: False
+2022-06-15 16:28:02,984: INFO: anamod.core.master: Feature 110: ordering important: True
+2022-06-15 16:28:02,984: INFO: anamod.core.master: Begin searching for temporal window for feature 110
+2022-06-15 16:28:40,649: INFO: anamod.core.master: Found window for feature 110: (1, 10); significant: True; ordering important: True
+2022-06-15 16:28:44,392: INFO: anamod.core.master: Feature 112: ordering important: True
+2022-06-15 16:28:44,393: INFO: anamod.core.master: Begin searching for temporal window for feature 112
+2022-06-15 16:29:20,917: INFO: anamod.core.master: Found window for feature 112: (1, 4); significant: True; ordering important: True
+2022-06-15 16:29:24,957: INFO: anamod.core.master: Feature 113: ordering important: True
+2022-06-15 16:29:24,957: INFO: anamod.core.master: Begin searching for temporal window for feature 113
+2022-06-15 16:30:03,472: INFO: anamod.core.master: Found window for feature 113: (1, 10); significant: True; ordering important: True
+2022-06-15 16:30:07,249: INFO: anamod.core.master: Feature 114: ordering important: True
+2022-06-15 16:30:07,250: INFO: anamod.core.master: Begin searching for temporal window for feature 114
+2022-06-15 16:30:42,585: INFO: anamod.core.master: Found window for feature 114: (1, 4); significant: True; ordering important: False
+2022-06-15 16:30:46,374: INFO: anamod.core.master: Feature 115: ordering important: True
+2022-06-15 16:30:46,374: INFO: anamod.core.master: Begin searching for temporal window for feature 115
+2022-06-15 16:31:23,486: INFO: anamod.core.master: Found window for feature 115: (1, 10); significant: True; ordering important: True
+2022-06-15 16:31:27,207: INFO: anamod.core.master: Feature 116: ordering important: True
+2022-06-15 16:31:27,207: INFO: anamod.core.master: Begin searching for temporal window for feature 116
+2022-06-15 16:32:14,374: INFO: anamod.core.master: Found window for feature 116: (0, 4); significant: True; ordering important: True
+2022-06-15 16:32:18,172: INFO: anamod.core.master: Feature 117: ordering important: True
+2022-06-15 16:32:18,172: INFO: anamod.core.master: Begin searching for temporal window for feature 117
+2022-06-15 16:32:55,446: INFO: anamod.core.master: Found window for feature 117: (1, 10); significant: True; ordering important: True
+2022-06-15 16:32:59,167: INFO: anamod.core.master: Feature 118: ordering important: True
+2022-06-15 16:32:59,167: INFO: anamod.core.master: Begin searching for temporal window for feature 118
+2022-06-15 16:33:33,968: INFO: anamod.core.master: Found window for feature 118: (1, 4); significant: True; ordering important: False
+2022-06-15 16:33:37,553: INFO: anamod.core.master: Feature 120: ordering important: True
+2022-06-15 16:33:37,553: INFO: anamod.core.master: Begin searching for temporal window for feature 120
+2022-06-15 16:34:16,786: INFO: anamod.core.master: Found window for feature 120: (1, 10); significant: True; ordering important: True
+2022-06-15 16:34:20,709: INFO: anamod.core.master: Feature 122: ordering important: True
+2022-06-15 16:34:20,710: INFO: anamod.core.master: Begin searching for temporal window for feature 122
+2022-06-15 16:34:58,489: INFO: anamod.core.master: Found window for feature 122: (1, 10); significant: True; ordering important: True
+2022-06-15 16:35:02,207: INFO: anamod.core.master: Feature 123: ordering important: True
+2022-06-15 16:35:02,207: INFO: anamod.core.master: Begin searching for temporal window for feature 123
+2022-06-15 16:35:39,371: INFO: anamod.core.master: Found window for feature 123: (1, 10); significant: True; ordering important: True
+2022-06-15 16:35:43,061: INFO: anamod.core.master: Feature 124: ordering important: True
+2022-06-15 16:35:43,061: INFO: anamod.core.master: Begin searching for temporal window for feature 124
+2022-06-15 16:36:22,590: INFO: anamod.core.master: Found window for feature 124: (0, 1); significant: True; ordering important: False
+2022-06-15 16:36:26,589: INFO: anamod.core.master: Feature 126: ordering important: True
+2022-06-15 16:36:26,590: INFO: anamod.core.master: Begin searching for temporal window for feature 126
+2022-06-15 16:37:05,416: INFO: anamod.core.master: Found window for feature 126: (1, 10); significant: True; ordering important: True
+2022-06-15 16:37:09,226: INFO: anamod.core.master: Feature 127: ordering important: True
+2022-06-15 16:37:09,226: INFO: anamod.core.master: Begin searching for temporal window for feature 127
+2022-06-15 16:37:48,301: INFO: anamod.core.master: Found window for feature 127: (1, 10); significant: True; ordering important: True
+2022-06-15 16:37:52,048: INFO: anamod.core.master: Feature 128: ordering important: True
+2022-06-15 16:37:52,049: INFO: anamod.core.master: Begin searching for temporal window for feature 128
+2022-06-15 16:38:28,321: INFO: anamod.core.master: Found window for feature 128: (1, 4); significant: True; ordering important: True
+2022-06-15 16:38:32,215: INFO: anamod.core.master: Feature 130: ordering important: True
+2022-06-15 16:38:32,215: INFO: anamod.core.master: Begin searching for temporal window for feature 130
+2022-06-15 16:39:10,681: INFO: anamod.core.master: Found window for feature 130: (1, 10); significant: True; ordering important: True
+2022-06-15 16:39:14,404: INFO: anamod.core.master: Feature 132: ordering important: True
+2022-06-15 16:39:14,404: INFO: anamod.core.master: Begin searching for temporal window for feature 132
+2022-06-15 16:39:51,779: INFO: anamod.core.master: Found window for feature 132: (1, 10); significant: True; ordering important: True
+2022-06-15 16:39:55,421: INFO: anamod.core.master: Feature 133: ordering important: True
+2022-06-15 16:39:55,422: INFO: anamod.core.master: Begin searching for temporal window for feature 133
+2022-06-15 16:40:36,383: INFO: anamod.core.master: Found window for feature 133: (0, 10); significant: True; ordering important: True
+2022-06-15 16:40:40,885: INFO: anamod.core.master: Feature 134: ordering important: True
+2022-06-15 16:40:40,885: INFO: anamod.core.master: Begin searching for temporal window for feature 134
+2022-06-15 16:41:23,890: INFO: anamod.core.master: Found window for feature 134: (0, 5); significant: True; ordering important: True
+2022-06-15 16:41:27,650: INFO: anamod.core.master: Feature 135: ordering important: True
+2022-06-15 16:41:27,651: INFO: anamod.core.master: Begin searching for temporal window for feature 135
+2022-06-15 16:42:08,897: INFO: anamod.core.master: Found window for feature 135: (0, 10); significant: True; ordering important: True
+2022-06-15 16:42:12,604: INFO: anamod.core.master: Feature 136: ordering important: True
+2022-06-15 16:42:12,604: INFO: anamod.core.master: Begin searching for temporal window for feature 136
+2022-06-15 16:42:46,295: INFO: anamod.core.master: Found window for feature 136: (1, 3); significant: True; ordering important: False
+2022-06-15 16:42:50,021: INFO: anamod.core.master: Feature 137: ordering important: True
+2022-06-15 16:42:50,021: INFO: anamod.core.master: Begin searching for temporal window for feature 137
+2022-06-15 16:43:29,416: INFO: anamod.core.master: Found window for feature 137: (1, 7); significant: True; ordering important: True
+2022-06-15 16:43:33,244: INFO: anamod.core.master: Feature 138: ordering important: True
+2022-06-15 16:43:33,244: INFO: anamod.core.master: Begin searching for temporal window for feature 138
+2022-06-15 16:44:10,575: INFO: anamod.core.master: Found window for feature 138: (1, 10); significant: True; ordering important: True
+2022-06-15 16:44:14,331: INFO: anamod.core.master: Feature 139: ordering important: True
+2022-06-15 16:44:14,331: INFO: anamod.core.master: Begin searching for temporal window for feature 139
+2022-06-15 16:44:51,664: INFO: anamod.core.master: Found window for feature 139: (0, 2); significant: True; ordering important: False
+2022-06-15 16:44:55,298: INFO: anamod.core.master: Feature 140: ordering important: True
+2022-06-15 16:44:55,299: INFO: anamod.core.master: Begin searching for temporal window for feature 140
+2022-06-15 16:45:35,979: INFO: anamod.core.master: Found window for feature 140: (1, 10); significant: True; ordering important: True
+2022-06-15 16:45:39,947: INFO: anamod.core.master: Feature 141: ordering important: True
+2022-06-15 16:45:39,948: INFO: anamod.core.master: Begin searching for temporal window for feature 141
+2022-06-15 16:46:17,803: INFO: anamod.core.master: Found window for feature 141: (1, 10); significant: True; ordering important: True
+2022-06-15 16:46:21,514: INFO: anamod.core.master: Feature 144: ordering important: True
+2022-06-15 16:46:21,515: INFO: anamod.core.master: Begin searching for temporal window for feature 144
+2022-06-15 16:47:02,012: INFO: anamod.core.master: Found window for feature 144: (1, 9); significant: True; ordering important: True
+2022-06-15 16:47:05,716: INFO: anamod.core.master: Feature 145: ordering important: True
+2022-06-15 16:47:05,717: INFO: anamod.core.master: Begin searching for temporal window for feature 145
+2022-06-15 16:47:47,848: INFO: anamod.core.master: Found window for feature 145: (0, 10); significant: True; ordering important: True
+2022-06-15 16:47:51,819: INFO: anamod.core.master: Feature 146: ordering important: True
+2022-06-15 16:47:51,820: INFO: anamod.core.master: Begin searching for temporal window for feature 146
+2022-06-15 16:48:33,244: INFO: anamod.core.master: Found window for feature 146: (1, 9); significant: True; ordering important: True
+2022-06-15 16:48:36,989: INFO: anamod.core.master: Feature 147: ordering important: True
+2022-06-15 16:48:36,990: INFO: anamod.core.master: Begin searching for temporal window for feature 147
+2022-06-15 16:49:13,882: INFO: anamod.core.master: Found window for feature 147: (1, 10); significant: True; ordering important: True
+2022-06-15 16:49:17,629: INFO: anamod.core.master: Feature 148: ordering important: True
+2022-06-15 16:49:17,629: INFO: anamod.core.master: Begin searching for temporal window for feature 148
+2022-06-15 16:49:54,050: INFO: anamod.core.master: Found window for feature 148: (1, 4); significant: True; ordering important: False
+2022-06-15 16:49:58,008: INFO: anamod.core.master: Feature 149: ordering important: True
+2022-06-15 16:49:58,008: INFO: anamod.core.master: Begin searching for temporal window for feature 149
+2022-06-15 16:50:32,468: INFO: anamod.core.master: Found window for feature 149: (1, 1); significant: False; ordering important: False
+2022-06-15 16:50:37,031: INFO: anamod.core.master: Feature 150: ordering important: True
+2022-06-15 16:50:37,031: INFO: anamod.core.master: Begin searching for temporal window for feature 150
+2022-06-15 16:51:14,849: INFO: anamod.core.master: Found window for feature 150: (1, 10); significant: True; ordering important: True
+2022-06-15 16:51:18,482: INFO: anamod.core.master: Feature 151: ordering important: True
+2022-06-15 16:51:18,483: INFO: anamod.core.master: Begin searching for temporal window for feature 151
+2022-06-15 16:51:55,246: INFO: anamod.core.master: Found window for feature 151: (1, 10); significant: True; ordering important: True
+2022-06-15 16:51:58,925: INFO: anamod.core.master: Feature 152: ordering important: True
+2022-06-15 16:51:58,926: INFO: anamod.core.master: Begin searching for temporal window for feature 152
+2022-06-15 16:52:37,157: INFO: anamod.core.master: Found window for feature 152: (1, 4); significant: True; ordering important: False
+2022-06-15 16:52:41,063: INFO: anamod.core.master: Feature 155: ordering important: True
+2022-06-15 16:52:41,063: INFO: anamod.core.master: Begin searching for temporal window for feature 155
+2022-06-15 16:53:18,418: INFO: anamod.core.master: Found window for feature 155: (1, 10); significant: True; ordering important: True
+2022-06-15 16:53:22,061: INFO: anamod.core.master: Feature 159: ordering important: True
+2022-06-15 16:53:22,061: INFO: anamod.core.master: Begin searching for temporal window for feature 159
+2022-06-15 16:53:58,924: INFO: anamod.core.master: Found window for feature 159: (1, 10); significant: True; ordering important: True
+2022-06-15 16:54:02,572: INFO: anamod.core.master: Feature 160: ordering important: True
+2022-06-15 16:54:02,572: INFO: anamod.core.master: Begin searching for temporal window for feature 160
+2022-06-15 16:54:39,342: INFO: anamod.core.master: Found window for feature 160: (1, 4); significant: True; ordering important: True
+2022-06-15 16:54:43,287: INFO: anamod.core.master: Feature 163: ordering important: True
+2022-06-15 16:54:43,287: INFO: anamod.core.master: Begin searching for temporal window for feature 163
+2022-06-15 16:55:20,869: INFO: anamod.core.master: Found window for feature 163: (1, 10); significant: True; ordering important: True
+2022-06-15 16:55:24,519: INFO: anamod.core.master: Feature 164: ordering important: True
+2022-06-15 16:55:24,519: INFO: anamod.core.master: Begin searching for temporal window for feature 164
+2022-06-15 16:55:57,482: INFO: anamod.core.master: Found window for feature 164: (1, 1); significant: False; ordering important: False
+2022-06-15 16:56:01,305: INFO: anamod.core.master: Feature 165: ordering important: True
+2022-06-15 16:56:01,305: INFO: anamod.core.master: Begin searching for temporal window for feature 165
+2022-06-15 16:56:39,285: INFO: anamod.core.master: Found window for feature 165: (1, 10); significant: True; ordering important: True
+2022-06-15 16:56:43,238: INFO: anamod.core.master: Feature 397: ordering important: True
+2022-06-15 16:56:43,239: INFO: anamod.core.master: Begin searching for temporal window for feature 397
+2022-06-15 16:57:26,099: INFO: anamod.core.master: Found window for feature 397: (2, 6); significant: True; ordering important: True
+2022-06-15 16:57:29,937: INFO: anamod.core.master: Feature 398: ordering important: True
+2022-06-15 16:57:29,938: INFO: anamod.core.master: Begin searching for temporal window for feature 398
+2022-06-15 16:58:07,157: INFO: anamod.core.master: Found window for feature 398: (1, 10); significant: True; ordering important: True
+2022-06-15 16:58:07,157: INFO: anamod.core.master: Begin writing outputs
+2022-06-15 16:58:07,185: INFO: anamod.core.master: End writing outputs
+2022-06-15 16:58:07,185: INFO: anamod.core.master: End anamod worker pipeline
+2022-06-15 16:58:07,185: INFO: anamod.core.master: Compiling results
+2022-06-15 16:58:07,229: INFO: anamod.core.master: Begin intermediate file cleanup
+2022-06-15 16:58:07,230: INFO: anamod.core.master: End intermediate file cleanup
+2022-06-15 16:58:08,053: WARNING: matplotlib.font_manager: findfont: Font family ['Serif'] not found. Falling back to DejaVu Sans.
+2022-06-15 16:58:08,053: WARNING: matplotlib.font_manager: findfont: Generic family 'serif' not found because none of the following families were found: Palatino
+2022-06-15 16:58:08,135: WARNING: matplotlib.font_manager: findfont: Font family ['Serif'] not found. Falling back to DejaVu Sans.
+2022-06-15 16:58:08,135: WARNING: matplotlib.font_manager: findfont: Generic family 'serif' not found because none of the following families were found: Palatino
+2022-06-15 16:58:09,359: WARNING: matplotlib.font_manager: findfont: Font family ['Serif'] not found. Falling back to DejaVu Sans.
+2022-06-15 16:58:09,359: WARNING: matplotlib.font_manager: findfont: Generic family 'serif' not found because none of the following families were found: Palatino
+2022-06-15 16:58:19,507: INFO: anamod.core.master: End anamod master pipeline
